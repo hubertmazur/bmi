@@ -1,5 +1,4 @@
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,21 +9,6 @@ public class BMICalculatorTest {
     @Before
     public void setup() {
         bmiCalculator = new BMICalculator();
-    }
-
-    @Ignore
-    @Test(expected = IllegalArgumentException.class)
-    public void negative_weight_given() {
-        double weight = -10.0;
-        double height = 1.58;
-
-    }
-
-    @Ignore
-    @Test
-    public void negative_height_given() {
-        double weight = 70.0;
-        double height = -1.98;
     }
 
 
